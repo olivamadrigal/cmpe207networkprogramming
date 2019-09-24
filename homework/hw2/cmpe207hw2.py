@@ -5,7 +5,7 @@ import sys
 HOST = '127.0.0.1'
 PORT = 55555
 
-# Create a TCP/IP socket  
+# Create a TCP/IP socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to the port
@@ -13,7 +13,7 @@ server_address = ('localhost', 10000)
 print(sys.stderr, 'starting up on %s port %s' % server_address)
 sock.bind(server_address)
 
-# Listen for incoming connections 
+# Listen for incoming connections
 sock.listen(1)
 
 while True:
@@ -25,14 +25,7 @@ while True:
 
         # Receive data in small chunks and retransmit it
         while True:
-            data = connection.recv(16)
-            print(sys.stderr, 'received "%s"' % data)
-            if data:
-                print(sys.stderr, 'sending data back to the client')
-                connection.sendall(data)
-            else:
-                print(sys.stderr, 'no more data from', client_address)
-                break
+            connection.sendall("How are you?")
     finally:
         # Clean up the connection
         connection.close()
