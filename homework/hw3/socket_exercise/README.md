@@ -7,10 +7,12 @@ HW #3 Chat App
 
 Homework #3
 Implement a chat application (as shown in the In-Class assignment) using Websockets, but with three (3) of the following improvements included.
-• Broadcast a message to connected users when someone connects or disconnects
-• Add support for nicknames
+
+
+• Broadcast a message to connected users when someone connects or disconnects [done in class]
+• Add support for nicknames [pending]
 • Don’t send the same message to the user that sent it himself. Instead,
-append the message directly as soon as he presses enter
-• Add “{user} is typing” functionality
-• Show who’s online
-• Add private messaging
+append the message directly as soon as he presses enter  [pending]
+• Add “{user} is typing” functionality  [pending]
+• Show who’s online  [pending]
+• Add private messaging  [pending]
